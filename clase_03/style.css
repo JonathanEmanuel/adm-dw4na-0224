@@ -1,0 +1,13 @@
+header {
+    height: 20vh;
+    position: sticky;
+    top: -5vh;
+}
+
+main {
+    min-height: 80vh;
+}
+
+footer {
+    height: 10vh;
+}
