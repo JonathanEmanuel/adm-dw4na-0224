@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>App</h1>
+        </header>
+        <main id="app">
+            <p v-bind:title="nombre"> Hola!  {{ nombre }} </p>
+            <p> tenes {{ edad + 2  }} Años</p>
+            <button v-on:click="iniciar"  type="button">Loguear</button>
+            <hr>
+            <div v-if="logueado == true">
+                <input v-model="nombre" type="text">
+                <img v-bind:src="lenguaje" alt="Lenguaje">
+            </div>
+            <div v-else>
+                <p> No estás logueado</p>
+            </div>
+
+            <hr>
+            <ul>
+                <li v-for="item in lenguajes"> {{ item}} </li>
+            </ul>
+    
+        </main>
+        <footer>
+            <p>Clientes Web Mobile</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
